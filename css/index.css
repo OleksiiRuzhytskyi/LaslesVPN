@@ -35,7 +35,9 @@ li {
 img {
 	max-width: 100%;
 	}
-button {
+button,
+button:active {
+	outline: none;
 	cursor: pointer;
 	border: none;
 }
@@ -64,20 +66,54 @@ button {
 .main-nav-link:hover {
 	color: #F53855;
 }
+.main-nav-link:active {
+	color: #0B132A;
+}
 .main-button__sign-in {
 	font-size: 16px;
 	color: #0B132A;
 	border-radius: 50px;
 	padding: 8px 20px;
 	margin-right: 5px;
+	background: transparent;
+	border: 1px solid transparent;
 } 
+.main-button__sign-in:hover {
+	color: #F53855;
+	border-radius: 50px;
+	padding: 8px 20px;
+	margin-right: 5px;
+	background: transparent;
+	border: 1px solid transparent;
+}
+.main-button__sign-in:active {
+	color: #0B132A;
+	border-radius: 50px;
+	padding: 8px 20px;
+	margin-right: 5px;
+	background: transparent;
+	border: 1px solid transparent;
+}
 .main-button__sign-up {
 	font-size: 16px;
 	color: #F53855;
 	padding: 8px 20px;
 	border-radius: 50px;
 	border: 1px solid #F53855;
+	background: transparent;
 	margin-left: 5px;
+	transition-duration: 0.5s;
+}
+.main-button__sign-up:hover {
+	color: #FCFFFF;
+	border: 1px solid transparent;
+	background: #F53855;
+}
+.main-button__sign-up:active {
+	color: #F53855;
+	border: 1px solid #F53855;
+	background: transparent;
+	transition-duration: 0.5s;
 }
 @media screen and (min-width: 576px) {
 	.container {
@@ -158,6 +194,9 @@ button {
 	color: #4F5665;
 	text-align: center;
 }
+.a__laslesvpn:hover {
+	color: #F53855;
+}
 .lasles-vpn-text-container__button {
 	font-size: 16px;
 	margin-bottom: 40px;
@@ -166,7 +205,18 @@ button {
 	padding: 8px 35px;
 	color:  #FCFFFF;
 	background: #F53855;
-	box-shadow: 5px 7px 20px #F53838;
+	box-shadow: 5px 2px 20px #F53838;
+	border: 2px solid transparent;
+}
+.lasles-vpn-text-container__button:hover {
+	color: #F53838;
+	background: transparent;
+	border: 2px solid #F53855;
+	transition-duration: 0.3s;
+}
+.lasles-vpn-text-container__button:active {
+	color:  #FCFFFF;
+	background: #F53855;
 }
 .quantity-container {
 	display: flex;
@@ -179,7 +229,7 @@ button {
 	align-items: center;
 }
 .quantity-container__ico {
-	padding-right: 10px;
+	margin-right: 10px;
 	font-size: 10px;
 	color: #F53855;
 }
@@ -188,6 +238,12 @@ button {
 }
 .quantity-container__text-below {
 	font-size: 8px;
+}
+.quantity-container__ico:hover {
+	color: #0B132A;
+}
+.quantity-container__ico:active {
+	color: #F53855;
 }
 @media screen and (min-width:576px) {
 	.container {
@@ -292,7 +348,7 @@ button {
 	}
 	.quantity-container__text-below {
 		font-size: 20px;
-}
+	}
 }
 .provide-container {
 	padding-top: 40px;
@@ -365,6 +421,12 @@ button {
 	padding-top: 20px;
 	margin-top: 20px;
 }
+.choose-your-plan_container__box-container__link {
+	color: transparent;
+}
+.choose-your-plan_container__box-container__link {
+	color: transparent;
+}
 .box-item__list {
 	text-align: start;
 }
@@ -383,6 +445,15 @@ button {
 	border: 2px solid #F53855;
 	color: #F53855;
 }
+.box-item__button:hover {
+	background: #F53855;
+	color: #FCFFFF;
+	border: 2px solid transparent;
+	transition-duration: 0.3s;
+	}
+.box-item__button:active {
+	box-shadow: 5px 7px 10px #F53838;
+}
 .choose-your-plan_container__box-item {
 	padding-top: 50px;
 	border: 2px solid #DDDDDD;
@@ -390,6 +461,12 @@ button {
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 }
+.choose-your-plan_container__box-item:hover {
+	border: 2px solid #F53855;
+}
+.choose-your-plan_container__box-item:active {
+	border: 2px solid #FCFFFF;
+} 
 .choose-your-plan_container__box-item__active {
 	border: 1px solid #F53855;
 	padding-top: 50px;
@@ -405,6 +482,13 @@ button {
 	box-shadow: 5px 7px 10px #F53838;
 	background: #F53855;
 	color: #FCFFFF;
+}
+.box-item__button__active:active {
+	border: 1px solid #F53855;
+	box-shadow: 5px 7px 10px #F53838;
+	background: #FCFFFF;
+	color: #F53838;
+	/* transition-duration: 0.3s; */
 }
 @media screen and (min-width: 375px) {
 	.choose-your-plan_container__box-item {
@@ -428,7 +512,6 @@ button {
 		min-width: 540px;
 	}
 	.choose-your-plan_container__box-container {
-		/* text-align: center; */
 		padding-left: 100px;
 	}
 }
@@ -486,10 +569,17 @@ button {
 .happy-customer-container__box-container {
 	padding-top: 30px;
 }
+.button-left-container {
+	font-size: 0;	
+}
 .happy-customer-container__box-active {
 	border: 2px solid #F53855;
 	border-radius: 10px;
 	padding: 12px 12px;
+}
+.happy-customer-container__box-active:active {
+	border: 2px solid #4F5665;
+	background: transparent;
 }
 .customer-flex-container {
 	display: flex;
@@ -512,6 +602,15 @@ button {
 	border-radius: 10px;
 	padding: 12px 12px;
 	border: 2px solid #DDD;
+	background: transparent;
+}
+.happy-customer-container__box:hover {
+	border: 2px solid #F53855;
+	background: transparent;
+}
+.happy-customer-container__box:active {
+	border: 2px solid #4F5665;
+	background: transparent;
 }
 .viezh-robert-flex__name-customer__review {
 	text-align: justify;
@@ -636,6 +735,14 @@ button {
 	border-radius: 50px;
 	border: 2px solid #F53855;
 }
+.ico-arrow-left:hover {
+background: #F53855;
+color: #FCFFFF;
+}
+.ico-arrow-left:active {
+	background: #FCFFFF;
+	color: #F53855;
+	}
 .ico-arrow-right {
 	font-size: 20px;
 	color:#FCFFFF;
@@ -643,6 +750,14 @@ button {
 	padding: 20px 20px;
 	border: 2px solid #F53855;
 	border-radius: 50px;
+}
+.ico-arrow-right:hover {
+	background: #FCFFFF;
+	color: #F53855;
+}
+.ico-arrow-right:active {
+	background: #F53855;
+	color: #FCFFFF;
 }
 @media screen and (min-width: 576px) {
 	.container {
@@ -682,7 +797,18 @@ button {
 	margin-top: 30px;
 	margin-bottom: 50px;
 	font-size: 16px;
-	box-shadow: 10px 10px 20px #F53838;
+	border: 2px solid #F53855;
+	box-shadow: 5px 5px 20px #F53838;
+}
+.subscribe-container__button:hover {
+	color: #F53855;
+	background: #FCFFFF;
+	border: 2px solid #F53855;
+}
+.subscribe-container__button:active {
+	color: #FCFFFF;
+	background: #F53855;
+	border: 2px solid #F53855;
 }
 @media screen and (min-width: 576px) {
 	.container {
@@ -725,17 +851,35 @@ color: #F53855;
 border: 1 px solid transparent;
 padding-right: 10px;
 }
+.ico-facebook:hover {
+	color: #0B132A;
+}
+.ico-facebook:active {
+	color: #F53855;
+}
 .ico-twitter {
 	font-size: 20px;
 	color: #F53855;
 	padding-left: 10px;
 	padding-right: 10px;
 }
+.ico-twitter:hover {
+	color: #0B132A;
+}
+.ico-twitter:active {
+	color: #F53855;
+}
 .ico-instagram {
 	font-size: 20px;
 	color: #F53855;
 	padding-left: 10px;
 	padding-top: 30px;
+}
+.ico-instagram:hover {
+	color: #0B132A;
+}
+.ico-instagram:active {
+	color: #F53855;
 }
 .anchor-container {
 	padding-top: 20px;
@@ -746,6 +890,12 @@ padding-right: 10px;
 }
 .item-container-item {
 	padding-top: 5px;
+}
+.footer-link-hover:hover {
+	color: #F53855;
+}
+.footer-link-hover:active {
+	color: #4F5665;
 }
 .item-container__text {
 	padding-top: 20px;

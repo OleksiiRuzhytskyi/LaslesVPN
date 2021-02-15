@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,31 +17,31 @@
 			<div class="logo-container">
 				<div class="main-logo-container">
 					<a href="https://laslesvpn.com">
-						<img src="./images/logo.svg" alt="logo" class="main-logo-img">
+						<img src="./images/logo.svg" alt="logo" class="main-logo-img" aria-label="logo img">
 					</a>
 				</div>
 				<nav class="main-nav-container">
 					<ul class="main-nav-list">
 						<li class="main-nav-item">
-							<a href="#about" class="main-nav-link">About</a>
+							<a href="#about" class="main-nav-link" aria-label="about">About</a>
 						</li>
 						<li class="main-nav-item">
-							<a href="#fatures" class="main-nav-link">Features</a>
+							<a href="#fatures" class="main-nav-link" aria-label="features">Features</a>
 						</li>
 						<li class="main-nav-item">
-							<a href="#pricing" class="main-nav-link">Pricing</a>
+							<a href="#pricing" class="main-nav-link" aria-label="pricing">Pricing</a>
 						</li>
 						<li class="main-nav-item">
-							<a href="#testimonials" class="main-nav-link">Testimonials</a>
+							<a href="#testimonials" class="main-nav-link" aria-label="testomonials">Testimonials</a>
 						</li>
 						<li class="main-nav-item">
-							<a href="#help" class="main-nav-link">Help</a>
+							<a href="#help" class="main-nav-link" aria-label="help">Help</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="button-container">
-					<button class="main-button__sign-in">Sign In</button>
-					<button class="main-button__sign-up">Sign Up</button>
+					<button class="main-button__sign-in" aria-label="sign in">Sign In</button>
+					<button class="main-button__sign-up" aria-label="sign up">Sign Up</button>
 				</div>
 			</div>
 		</div>
@@ -53,9 +53,13 @@
 					<div class="lasles-vpn-text-container">
 						<h1 class="main-text">Want anything to be easy with LaslesVPN.</h1>
 						<p class="main-text__p">Provide a network for all your needs with ease 
-							and fun using <b>LaslesVPN</b> discover interesting features from us.
+							and fun using 
+							<b> 
+								<a href="https://laslesVPN.com" class="gray-text a__laslesvpn">LaslesVPN</a>
+							</b>
+							discover interesting features from us.
 						</p>
-						<button class="lasles-vpn-text-container__button">Get Started</button>
+						<button class="lasles-vpn-text-container__button" >Get Started</button>
 					</div>
 					<div class="main-photo-container">
 						<picture>
@@ -75,31 +79,37 @@
 							srcset="./images/main-230-1x.webp 1x,
 											./images/main-460-2x.webp 2x"
 											type="image/webp">																
-							<img src="./images/main-1x.jpg" alt="main photo" class="main-img">
+							<img src="./images/main-1x.jpg" alt="main photo" class="main-img" loading="lazy" aria-label="img">
 						</picture>
 					</div>
 				</div>
 				<div class="quantity-container">
 					<div class="quantity-container__group">
-						<span class="quantity-container__ico">
-							<span class="icon-ico-user"></span>
-						</span>
+						<a href="#user" class="quantity-container__link">
+							<span class="quantity-container__ico">
+								<span class="icon-ico-user"></span>
+							</span>
+						</a>
 						<p class="quantity-container__text"><b>90+</b>
 							<br> <span class="quantity-container__text-below">User</span>
 						</p>
 					</div>
 					<div class="quantity-container__group">
-						<span class="quantity-container__ico">
-							<span class="icon-ico-loc"></span>
-						</span>
+						<a href="#locations" class="quantity-container__link">
+							<span class="quantity-container__ico">
+								<span class="icon-ico-loc"></span>
+							</span>
+						</a>
 						<p class="quantity-container__text"><b>30+</b>
 							<br> <span class="quantity-container__text-below">Locations</span>
 						</p>
 					</div>
 					<div class="quantity-container__group">
-						<span class="quantity-container__ico">
-							<span class="icon-ico-dominoes"></span>
-						</span>
+						<a href="#servers" class="quantity-container__link">
+							<span class="quantity-container__ico">
+								<span class="icon-ico-dominoes"></span>
+							</span>
+						</a>
 						<p class="quantity-container__text"><b>50+</b>
 							<br> <span class="quantity-container__text-below">Servers</span>
 						</p>
@@ -128,7 +138,7 @@
 							srcset="./images/secondary-320-1x.webp 1x,
 											./images/secondary-640-2x.webp 2x"
 											type="image/webp">
-							<img src="./images/secondary-1x.jpg" alt="secondary photo" class="provide-photo">
+							<img src="./images/secondary-1x.jpg" alt="secondary photo" class="provide-photo" loading="lazy" aria-label="img">
 						</picture>
 					</div>
 					<div class="provide-container__list-container">
@@ -179,6 +189,7 @@
 					</p>
 					<div class="choose-your-plan_container__box-container">
 						<div class="choose-your-plan_container__box-item">
+							<a href="#free-plan" aria-label="box-free-plan" class="choose-your-plan_container__box-container__link">.
 								<img src="./images/free.svg" alt="free" class="box-list-img">
 								<h3 class="box-item__text black-text">Free Plan</h3>
 								<ul class="box-item__list gray-text">
@@ -207,90 +218,95 @@
 										Works on All Devices
 									</li>
 								</ul>
-								<h4 class="box-item__price price-free">Free</h4>
-								<button class="box-item__button">Select</button>
+								<h4 class="box-item__price price-free black-text">Free</h4>
+								<button class="box-item__button" aria-label="select">Select</button>
+							</a>
 						</div>
 						<div class="choose-your-plan_container__box-item">
-							<img src="./images/standard.svg" alt="standard" class="box-list-img">
-							<h3 class="box-item__text black-text">Standard Plan</h3>
-							<ul class="box-item__list gray-text">
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Unlimited Bandwitch
-								</li>
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Encrypted Connection
-								</li>
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Yes Traffic Logs
-								</li>
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Works on All Devices
-								</li>
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Connect Anyware
-								</li>
-							</ul>
-							<h4 class="box-item__price black-text price-standard">$9 <span class="gray-text">/ mo</span></h4>
-							<button class="box-item__button">Select</button>
+							<a href="#free-plan" aria-label="box-free-plan" class="choose-your-plan_container__box-container__link">.
+								<img src="./images/standard.svg" alt="standard" class="box-list-img">
+								<h3 class="box-item__text black-text">Standard Plan</h3>
+								<ul class="box-item__list gray-text">
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Unlimited Bandwitch
+									</li>
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Encrypted Connection
+									</li>
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Yes Traffic Logs
+									</li>
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Works on All Devices
+									</li>
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Connect Anyware
+									</li>
+								</ul>
+								<h4 class="box-item__price black-text price-standard">$9 <span class="gray-text">/ mo</span></h4>
+								<button class="box-item__button" aria-label="select">Select</button>
+							</a>
 						</div>
 						<div class="choose-your-plan_container__box-item__active black-text">
-							<img src="./images/standard.svg" alt="standard" class="box-list-img">
-							<h3 class="box-item__text black-text">Premium Plan</h3>
-							<ul class="box-item__list gray-text">
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Unlimited Bandwitch
-								</li>
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Encrypted Connection
-								</li>
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Yes Traffic Logs
-								</li>
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Works on All Devices
-								</li>
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Connect Anyware
-								</li>
-								<li class="box-item__item">
-									<span class="ico-arrow-down__box-list green-text">
-										<span class="icon-arrow-down"></span>
-									</span>
-									Get New Features
-								</li>
-							</ul>
-							<h4 class="box-item__price black-text price-premium">$12<span class="gray-text">/ mo</span></h4>
-							<button class="box-item__button__active">Select</button>
+							<a href="#free-plan" aria-label="box-free-plan" class="choose-your-plan_container__box-container__link-active">.
+								<img src="./images/standard.svg" alt="standard" class="box-list-img">
+								<h3 class="box-item__text black-text">Premium Plan</h3>
+								<ul class="box-item__list gray-text">
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Unlimited Bandwitch
+									</li>
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Encrypted Connection
+									</li>
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Yes Traffic Logs
+									</li>
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Works on All Devices
+									</li>
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Connect Anyware
+									</li>
+									<li class="box-item__item">
+										<span class="ico-arrow-down__box-list green-text">
+											<span class="icon-arrow-down"></span>
+										</span>
+										Get New Features
+									</li>
+								</ul>
+								<h4 class="box-item__price black-text price-premium">$12<span class="gray-text">/ mo</span></h4>
+								<button class="box-item__button__active" aria-label="select">Select</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -307,78 +323,84 @@
 						joined us with great <br>pleasure when using this crazy feature.
 					</p>
 					<div class="happy-customer-container__box-container">
-						<div class="happy-customer-container__box-active">
-							<div class="customer-flex-container">
-								<div class="img-name-flex">
-									<img src="./images/viezh-robert.jpg" alt="vizh robert photo" class="customer-flex__img">
-										<span class="viezh-robert-flex__name-customer black-text fs-18">
-										<b>Viezh Robert</b>
-										<br>
-										<span class="gray-text fs-14">Warshaw, Poland</span>
-									</span>
+						<a href="#happy-customer" aria-label="anchor">
+							<div class="happy-customer-container__box-active">
+								<div class="customer-flex-container">
+									<div class="img-name-flex">
+										<img src="./images/viezh-robert.jpg" alt="vizh robert photo" class="customer-flex__img" aria-label="img" loading="lazy">
+											<span class="viezh-robert-flex__name-customer black-text fs-18">
+											<b>Viezh Robert</b>
+											<br>
+											<span class="gray-text fs-14">Warshaw, Poland</span>
+										</span>
+									</div>
+										<div>
+											<span class="grade black-text">4.5</span>
+											<span class="ico-star gold-text fs-14">
+												<span class="icon-star"></span>
+											</span>
+										</div>
 								</div>
+									<p class="viezh-robert-flex__name-customer__review black-text">
+										“Wow... I am very happy to use this VPN, it turned out to be more than my expectations
+										and so far there have been no problems. LaslesVPN always the best”.
+									</p>
+							</div>
+						</a>
+						<a href="#happy-customer" aria-label="anchor">
+							<div class="happy-customer-container__box box-yessica">
+								<div class="customer-flex-container">
+									<div class="img-name-flex">
+										<img src="./images/yessica-christy.jpg" alt="yessica-christy photo" class="customer-flex__img" aria-label="img" loading="lazy">
+										<span class="viezh-robert-flex__name-customer black-text fs-18">
+											<b>Yessica Christy</b>
+											<br>
+											<span class="gray-text fs-14">Shanxi, China</span>
+										</span>
+									</div>
 									<div>
 										<span class="grade black-text">4.5</span>
-										<span class="ico-star gold-text fs-14">
+										<span class="ico-star gold-text">
 											<span class="icon-star"></span>
 										</span>
 									</div>
+								</div>
+									<p class="viezh-robert-flex__name-customer__review black-text">
+										“I like it because I like to travel far and still can connect with high speed.”.
+									</p>
 							</div>
-								<p class="viezh-robert-flex__name-customer__review black-text">
-									“Wow... I am very happy to use this VPN, it turned out to be more than my expectations
-									and so far there have been no problems. LaslesVPN always the best”.
-								</p>
-						</div>
-						<div class="happy-customer-container__box box-yessica">
-							<div class="customer-flex-container">
-								<div class="img-name-flex">
-									<img src="./images/yessica-christy.jpg" alt="yessica-christy photo" class="customer-flex__img">
-									<span class="viezh-robert-flex__name-customer black-text fs-18">
-										<b>Yessica Christy</b>
-										<br>
-										<span class="gray-text fs-14">Shanxi, China</span>
-									</span>
+						</a>
+						<a href="#happy-customer" aria-label="anchor">
+							<div class="happy-customer-container__box box-kim">
+								<div class="customer-flex-container">
+									<div class="img-name-flex">
+										<img src="./images/kim-young.jpg" alt="kim-young photo" class="customer-flex__img" aria-label="img" loading="lazy">
+										<span class="viezh-robert-flex__name-customer black-text fs-18">
+											<b>Kim Young Jou</b>
+											<br>
+											<span class="gray-text fs-14">Seoul, South Korea</span>
+										</span>
+									</div>
+									<div>
+										<span class="grade black-text">4.5</span>
+										<span class="ico-star gold-text">
+											<span class="icon-star"></span>
+										</span>
+									</div>
 								</div>
-								<div>
-									<span class="grade black-text">4.5</span>
-									<span class="ico-star gold-text">
-										<span class="icon-star"></span>
-									</span>
-								</div>
+									<p class="viezh-robert-flex__name-customer__review black-text">
+										“This is very unusual for my business that currently 
+										requires a virtual private network that has high security.”.
+									</p>
 							</div>
-								<p class="viezh-robert-flex__name-customer__review black-text">
-									“I like it because I like to travel far and still can connect with high speed.”.
-								</p>
-						</div>
-						<div class="happy-customer-container__box box-kim">
-							<div class="customer-flex-container">
-								<div class="img-name-flex">
-									<img src="./images/kim-young.jpg" alt="kim-young photo" class="customer-flex__img">
-									<span class="viezh-robert-flex__name-customer black-text fs-18">
-										<b>Kim Young Jou</b>
-										<br>
-										<span class="gray-text fs-14">Seoul, South Korea</span>
-									</span>
-								</div>
-								<div>
-									<span class="grade black-text">4.5</span>
-									<span class="ico-star gold-text">
-										<span class="icon-star"></span>
-									</span>
-								</div>
-							</div>
-								<p class="viezh-robert-flex__name-customer__review black-text">
-									“This is very unusual for my business that currently 
-									requires a virtual private network that has high security.”.
-								</p>
-						</div>
+						</a>
 					</div>
 					<div class="happy-customer-container__button-container">
 						<div class="button-left-container">
-							<button class="button-left-container__button-active"></button>
-							<button class="button-left-container__button"></button>
-							<button class="button-left-container__button"></button>
-							<button class="button-left-container__button"></button>							
+							<button class="button-left-container__button-active">#</button>
+							<button class="button-left-container__button">#</button>
+							<button class="button-left-container__button">#</button>
+							<button class="button-left-container__button">#</button>							
 						</div>
 						<div class="button-right-container">
 							<span class="ico-arrow-left">
@@ -399,7 +421,7 @@
 						<h2 class="subscribe-container__h2 black-text">Subscribe Now for <br>Get Special Features!</h2>
 						<p class="subscribe-container__p gray-text">Let's subscribe with us and find the fun.</p>
 					</div>
-					<button class="subscribe-container__button">Subscribe Now</button>
+					<button class="subscribe-container__button" aria-label="buttin subscribe now">Subscribe Now</button>
 				</div>
 			</div>
 		</section>
@@ -408,19 +430,21 @@
 		<div class="container">
 			<div class="footer-container-flex">
 				<div class="footer-container-flex__logo-footer-container">
-					<img src="./images/logo.svg" alt="logo">
+					<a href="https://laslesvpn.com" aria-label="anchor">
+						<img src="./images/logo.svg" alt="logo">
+					</a> 
 					<p class="logo-footer-container__p gray-text">
 						<b>LaslesVPN</b> is a private virtual network that has unique 
 						features and has high security.
 					</p>
 					<div class="anchor-container">
-					<a href="https://facebook.com" class="ico-facebook">
+					<a href="https://facebook.com" class="ico-facebook" aria-label="anchor">
 						<span class="icon-facebook"></span>
 					</a>
-					<a href="https://twitter.com" class="ico-twitter">
+					<a href="https://twitter.com" class="ico-twitter" aria-label="anchor">
 						<span class="icon-twitter"></span>
 					</a>
-					<a href="https://instagram.com" class="ico-instagram">
+					<a href="https://instagram.com" class="ico-instagram" aria-label="anchor">
 						<span class="icon-instagram"></span>
 					</a>
 					</div>
@@ -429,30 +453,57 @@
 				<div class="footer-container-flex__item-container">
 					<h4 class="item-container__text black-text">Product</h4>
 					<ul class="item-container-list gray-text">
-						<li class="item-container-item">Downloads</li>
-						<li class="item-container-item">Pricing</li>
-						<li class="item-container-item">Locations</li>
-						<li class="item-container-item">Server</li>
-						<li class="item-container-item">Countries</li>
-						<li class="item-container-item">Blog</li>
+						<li class="item-container-item">
+							<a href="#downloads" class="footer-link-hover gray-text">Downloads</a>
+						</li>
+						<li class="item-container-item">
+							<a href="#Pricing" class="footer-link-hover gray-text">Pricing</a>
+						</li>
+						<li class="item-container-item">
+							<a href="#Locations" class="footer-link-hover gray-text">Locations</a>
+						</li>
+						<li class="item-container-item">
+							<a href="#Server" class="footer-link-hover gray-text">Server</a>
+						</li>
+						<li class="item-container-item">
+							<a href="#Countries" class="footer-link-hover gray-text">Countries</a>
+						</li>
+						<li class="item-container-item">
+							<a href="#Blog" class="footer-link-hover gray-text">Blog</a>
+						</li>
 					</ul>
 				</div>
 				<div class="footer-container-flex__item-container">
 					<h4 class="item-container__text black-text">Engage</h4>
 					<ul class="item-container-list gray-text">
-						<li class="item-container-item">LaslesVPN?</li>
-						<li class="item-container-item">FAQ</li>
-						<li class="item-container-item">Tutorials</li>
-						<li class="item-container-item">About Us</li>
-						<li class="item-container-item">Privacy Policy</li>
-						<li class="item-container-item">Terms of Service</li>
+						<li class="item-container-item">
+							<a href="#LaslesVPN" class="footer-link-hover gray-text">LaslesVPN?</a>
+						</li>
+						<li class="item-container-item">
+							<a href="#FAQ" class="footer-link-hover gray-text">FAQ</a>
+						</li>
+						<li class="item-container-item">
+							<a href="#Tutorials" class="footer-link-hover gray-text">Tutorials</a>
+						</li>
+						<li class="item-container-item">
+							<a href="#About-Us" class="footer-link-hover gray-text">About Us</li>
+						<li class="item-container-item">
+							<a href="#Privacy-Policy" class="footer-link-hover gray-text">Privacy Policy</a>
+						</li>
+						<li class="item-container-item">
+							<a href="#Terms-of-Service" class="footer-link-hover gray-text">Terms of Service</a>
+						</li>
 					</ul>
 				</div>
 				<div class="footer-container-flex__item-container">
 					<h4 class="item-container__text black-text">Earn money</h4>
 					<ul class="item-container-list gray-text ">
-						<li class="item-container-item">Affilate</li>
-						<li class="item-container-item">Become Parther</li>
+						<li class="item-container-item">
+							<a href="#Affilate" class="footer-link-hover gray-text">Affilate</a>
+						</li>
+						<li class="item-container-item">
+							<a href="#Become-Parther" class="footer-link-hover gray-text">Become Parther</a>
+						</li>
 					</ul>
 				</div>
 			</div>
