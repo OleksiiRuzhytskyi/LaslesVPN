@@ -228,6 +228,9 @@ button:active {
 	display: flex;
 	align-items: center;
 }
+.quantity-container__link {
+	font-size: 0;
+}
 .quantity-container__ico {
 	margin-right: 10px;
 	font-size: 10px;
